@@ -1,6 +1,6 @@
 {
   "name": "dsh-plain-plugin-menu",
-  "description": "A plain-language plugin catalog and profile manager for the DeepSeek Harness Web UI.",
+  "description": "用大白话分类、比较、安装和管理 DeepSeek Harness 插件｜A plain-language plugin catalog and manager for DSH.",
   "version": "0.1.1",
   "type": "module",
   "main": "lib/index.js",
@@ -85,7 +85,9 @@
     "data",
     "lib",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "README.en.md",
+    "SECURITY.md"
   ],
   "engines": {
     "node": "^22.19.0 || >=24.0.0"

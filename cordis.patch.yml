@@ -1,3 +1,4 @@
+# 将 Host HTTP bridge 和浏览器插件菜单加入当前 Web profile。
 # Adds the host HTTP bridge and its browser-side menu to the current Web profile.
 - insert:
     - id: plain-plugin-menu

@@ -1,8 +1,12 @@
 # DSH 插件菜单
 
-![DSH Plugin Menu：用大白话分类、比较、安装和管理 DeepSeek Harness 插件](assets/social-preview-v3.jpg)
+**简体中文** ｜ [English](https://github.com/4mForAI/dsh-plain-plugin-menu/blob/main/README.en.md)
 
-把 DeepSeek Harness 社区插件按大白话重新整理，并放到 Web UI 左侧栏底部。点击“插件菜单”即可搜索、筛选、排序、安装、卸载和查看当前 profile 的全部树外插件。
+![DSH Plugin Menu：用大白话分类、比较、安装和管理 DeepSeek Harness 插件](https://raw.githubusercontent.com/4mForAI/dsh-plain-plugin-menu/main/assets/social-preview-v3.jpg)
+
+面向中文用户的 DeepSeek Harness 插件目录与管理器：用大白话重新分类社区插件，并放到 Web UI 左侧栏底部。点击“插件菜单”即可搜索、筛选、比较公开指标、安装、卸载和管理当前 profile 的全部树外插件。
+
+[npm 安装包](https://www.npmjs.com/package/dsh-plain-plugin-menu) ｜ [GitHub Releases](https://github.com/4mForAI/dsh-plain-plugin-menu/releases) ｜ [问题反馈](https://github.com/4mForAI/dsh-plain-plugin-menu/issues)
 
 ## 它解决什么问题
 
@@ -40,7 +44,7 @@
 
 ## 安装
 
-发布到 npm 后，推荐使用官方 CLI 包直接安装：
+插件已经发布到 npm，推荐使用官方 CLI 包直接安装：
 
 ```sh
 npx -y @deepseek-ai/dsh plugin --profile web add dsh-plain-plugin-menu
@@ -149,6 +153,6 @@ Host 入口生成到 `lib/index.js`；浏览器端生成 DSH 客户端模块工�
 - [架构说明](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/architecture.md)
 - [CLI profile 与 plugin 行为](https://github.com/deepseek-ai/deepseek-harness/blob/master/apps/cli/reference/README.zh.md)
 
-## License
+## 许可证
 
 MIT
