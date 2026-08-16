@@ -1,0 +1,93 @@
+{
+  "name": "dsh-plain-plugin-menu",
+  "description": "A plain-language plugin catalog and profile manager for the DeepSeek Harness Web UI.",
+  "version": "0.1.1",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "license": "MIT",
+  "author": "4mForAI",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4mForAI/dsh-plain-plugin-menu.git"
+  },
+  "homepage": "https://github.com/4mForAI/dsh-plain-plugin-menu#readme",
+  "bugs": {
+    "url": "https://github.com/4mForAI/dsh-plain-plugin-menu/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-manager",
+    "plugin-menu"
+  ],
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.host.json --noEmit && tsc -p tsconfig.client.json --noEmit",
+    "build:host": "tsc -p tsconfig.host.json",
+    "build:client": "tsdown",
+    "build": "npm run build:host && npm run build:client",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run test && npm run build",
+    "prepack": "npm run check",
+    "prepare": "npm run build",
+    "snapshot": "node scripts/build-snapshot.mjs"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/schemastery": "^3.18.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^26.0.0",
+    "@types/react": "~18.3.1",
+    "jsdom": "^26.1.0",
+    "lightningcss": "^1.33.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsdown": "^0.22.14",
+    "typescript": "^7.0.0",
+    "unrun": "^0.2.39",
+    "vitest": "^4.1.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ],
+      "platform": "web"
+    }
+  },
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./client": "./client/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "client",
+    "cordis.patch.yml",
+    "data",
+    "lib",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  }
+}

@@ -1,0 +1,9 @@
+# Adds the host HTTP bridge and its browser-side menu to the current Web profile.
+- insert:
+    - id: plain-plugin-menu
+      name: 'dsh-plain-plugin-menu'
+      config:
+        profile: web
+        catalogTtlMinutes: 15
+        githubPages: 10
+        operationTimeoutMinutes: 15
