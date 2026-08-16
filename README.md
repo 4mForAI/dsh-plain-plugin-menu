@@ -1,5 +1,7 @@
 # DSH 插件菜单
 
+![DSH Plugin Menu：用大白话分类、比较、安装和管理 DeepSeek Harness 插件](assets/social-preview-v3.jpg)
+
 把 DeepSeek Harness 社区插件按大白话重新整理，并放到 Web UI 左侧栏底部。点击“插件菜单”即可搜索、筛选、排序、安装、卸载和查看当前 profile 的全部树外插件。
 
 ## 它解决什么问题
